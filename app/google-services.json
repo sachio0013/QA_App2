@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "148297565419",
+    "firebase_url": "https://qaapp-2d82b.firebaseio.com",
+    "project_id": "qaapp-2d82b",
+    "storage_bucket": "qaapp-2d82b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148297565419:android:ba21f8074df982a4",
+        "android_client_info": {
+          "package_name": "jp.techacademy.sachio.suenaga.qa_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148297565419-d862qcaqm93jo84lu204fp6vr84ovghh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "148297565419-d862qcaqm93jo84lu204fp6vr84ovghh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcMD9RbETBnPH8RsPe6Ur5oER6KOOUf6E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
