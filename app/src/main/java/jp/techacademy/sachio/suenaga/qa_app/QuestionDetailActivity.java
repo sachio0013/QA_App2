@@ -1,6 +1,7 @@
 package jp.techacademy.sachio.suenaga.qa_app;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -22,7 +23,7 @@ public class QuestionDetailActivity extends AppCompatActivity {
     private ListView mListView;
     private Question mQuestion;
     private QuestionDetailListAdapter mAdapter;
-    private FloatingActionButton mFavarite;
+    private FloatingActionButton mFavorite;
 
     private DatabaseReference mAnswerRef;
 
@@ -87,7 +88,11 @@ public class QuestionDetailActivity extends AppCompatActivity {
         mListView.setAdapter(mAdapter);
         mAdapter.notifyDataSetChanged();
 
-        mFavarite = (FloatingActionButton) findViewById(R.id.favarite) ;
+        mFavorite = (FloatingActionButton) findViewById(R.id.favorite) ;
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        Drawable drawable = res.getDrawable(R.drawable.star2);
+        fab.setImageDrawable(drawable);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -124,9 +129,9 @@ public class QuestionDetailActivity extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         if (user == null){
-            mFavarite.setVisibility(View.INVISIBLE);
+            mFavorite.setVisibility(View.INVISIBLE);
         }else {
-            mFavarite.setVisibility(View.VISIBLE);
+            mFavorite.setVisibility(View.VISIBLE);
         }
     }
 
