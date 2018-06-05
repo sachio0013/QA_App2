@@ -1,6 +1,7 @@
 package jp.techacademy.sachio.suenaga.qa_app;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -90,9 +91,9 @@ public class QuestionDetailActivity extends AppCompatActivity {
 
         mFavorite = (FloatingActionButton) findViewById(R.id.favorite) ;
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        Resources res = getResources();
         Drawable drawable = res.getDrawable(R.drawable.star2);
-        fab.setImageDrawable(drawable);
+        mFavorite.setImageDrawable(drawable);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
